@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Twitter embed fix",
+    "version": "1.0",
+  
+    "description": "This addon will automaticly replace twitter links that won't embed to ones that can",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.mozilla.org/*"],
+        "js": ["borderify.js"]
+      }
+    ]
+  }
+  
